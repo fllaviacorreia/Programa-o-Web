@@ -1,0 +1,32 @@
+body {
+    font-family: "Helvetica", "Lucida Grande", sans-serif;
+    background-color:rgb(218, 236, 238);
+    border-color: rgba(255, 0, 0, 0.097);
+    border-style: solid;
+    border-width: 1px;  
+}
+
+h1 {
+    font-family: serif;
+    border-top: 1px solid rgba(255, 0, 0, 0.097); /* borda vermelha em cima */
+    border-right: 1px solid rgba(255, 0, 0, 0.097);; /* borda vermelha à direita */
+    border-bottom: 1px solid rgba(255, 0, 0, 0.097);; /* borda vermelha embaixo */
+    border-left: 1px solid rgba(255, 0, 0, 0.097);; /* borda vermelha à esquerda */
+}
+
+h2 {
+    font-family: sans-serif;
+    border-top: 1px solid rgba(255, 0, 0, 0.097);; /* borda vermelha em cima */
+    border-right: 1px solid rgba(255, 0, 0, 0.097);; /* borda vermelha à direita */
+    border-bottom: 1px solid rgba(255, 0, 0, 0.097);; /* borda vermelha embaixo */
+    border-left: 1px solid rgba(255, 0, 0, 0.097);; /* borda vermelha à esquerda */
+}
+
+p {
+    font-family: monospace;
+    text-align: justify;
+    line-height: 30px; /* tamanho da altura de cada linha */
+    letter-spacing: 1px; /* tamanho do espaço entre cada letra */
+    word-spacing: 2px; /* tamanho do espaço entre cada palavra */
+    text-indent: 30px; /* tamanho da margem da primeira linha do texto */
+}
