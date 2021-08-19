@@ -14,12 +14,6 @@ h1 {
 h2 {
       border-bottom: 2px solid black;
 }
-
-.subtitulo {
-      font-size: 24px;
-      font-weight: bold;
-      border-bottom: 1px solid #000000;
-      }
      
 figure {
       margin: 30px;
@@ -33,19 +27,4 @@ figure {
 
 figcaption {
       margin-top: 10px;
-}
-
-.matriz-musicdot {
-      width: 550px;
-      margin-left: auto;
-      margin-right: auto;
-}
-    
-.familia-tupfeln {
-      width: 275px;
-      float: right;
-}
-
-figure img {
-      width: 100%;
 }
