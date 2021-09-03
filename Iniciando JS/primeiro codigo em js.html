@@ -1,0 +1,58 @@
+<!--******** IMPLEMENTANDO O CÓDIGO DENTRO DO PRÓPRIO ARQUIVO HTML ********-->
+<!-- Seguindo tutorial de Primeiros passos com JavaScript: 
+    https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!--indicação do idioma principal da pagina-->
+    <!-- início do cabeçalho-->
+    <head>
+        <meta charset="UTF-8"> 
+       <title>
+           Primeiro codigo em JS
+        </title>
+
+        <style>
+            p {
+              font-family: 'helvetica neue', helvetica, sans-serif;
+              letter-spacing: 1px; /* setando o distanciamento entre os caracteres alfa para 1px*/
+              text-transform: uppercase; /* setando os caracteres para caixa alta*/
+              text-align: center; /* setando o texto para o centro*/
+              border: 2px solid rgba(0,0,200,0.6); /* adicionando a borda com largura, sólida e cor*/
+              background: rgba(0,0,200,0.3);  /* adicionando cor no fundo*/
+              color: rgba(0,0,200,0.6); /* adicionando cor nos caracteres*/
+              box-shadow: 1px 1px 2px rgba(0,0,200,0.4); /* adicionando sombra ao redor do elemento*/
+              border-radius: 10px; /* setando a borda para arredondado*/
+              padding: 3px 10px; /* setando a distância entre o conteúdo da tag e as bordas (3px para bottom e top e 10 px para left e right)*/
+              display: inline-block;/*Setando para elementos 'p' ficarem um do lado do outro com deficição de width e height e tendo comportamento de palavra*/
+              cursor: pointer; /*setando valor para quando o ponteiro estiver em cima da tag mude o cursor para a maozinha*/
+            }
+          </style>
+
+    </head>
+     <!-- final do cabeçalho-->
+
+      <!-- início do corpo-->
+    <body>
+        <h3>Testando o JS no arquivo html</h3>
+
+        <p>Jogador 1: </p>
+
+        
+        <script>
+          var para = document.querySelector('p'); //
+    
+          para.addEventListener('click', atualizarNome); //adicionando eventListener na tag p
+    
+          //função na qual ocorre a entrada do usuário e atualização na tag p
+          function atualizarNome() {
+            var nome = prompt('Insira um novo nome');
+            para.textContent = 'Jogador 1: ' + nome;
+          }
+        </script>
+    </body>
+     <!-- final do corpo-->
+</html>
+
+
+
+
