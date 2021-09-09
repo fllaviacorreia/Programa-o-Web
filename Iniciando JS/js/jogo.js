@@ -14,6 +14,7 @@
 //Variáveis
 var numeroAleatorio= Math.floor(Math.random() * 100) + 1;
 
+//querySelector está pegando os elementos no html através do class
 var palpites = document.querySelector('.palpites');
 var ultimoResultado = document.querySelector('.ultimoResultado');
 var baixoOuAlto = document.querySelector('.baixoOuAlto');
@@ -78,6 +79,7 @@ function conferirPalpite() {
   campoPalpite.focus();
 }
 
+// quando o usuário "envia" o palpite a função conferirPalpite é chamada (não precisa dos parêntesis)
 envioPalpite.addEventListener('click', conferirPalpite);
 
 // Função quando o jogo acaba
@@ -100,15 +102,19 @@ function reiniciarJogo() {
       reiniciarParas[i].textContent = '';
     }
   
+    //removendo botaoReinicio da tela
     botaoReinicio.parentNode.removeChild(botaoReinicio);
   
     campoPalpite.disabled = false;
     envioPalpite.disabled = false;
     campoPalpite.value = '';
+
+    //automaticamente coloca o cursor dentro campo de texto do <input>
     campoPalpite.focus();
   
-    ultimoResultado.style.backgroundColor = 'white';
+    ultimoResultado.style.backgroundColor = null;
   
+    //seleciona aleatoriamente um novo numero entre 1 e 100
     numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 }
   
